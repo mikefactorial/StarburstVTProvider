@@ -1,0 +1,290 @@
+{
+  "id": "20241121_155928_12605_cy8fy",
+  "infoUri": "https://mikefactorial-free-cluster.trino.galaxy.starburst.io/ui/query.html?20241121_155928_12605_cy8fy",
+  "partialCancelUri": "https://dep-753156405036.aws-us-east2-8085.trino.galaxy.starburst.io/v1/statement/executing/partialCancel/20241121_155928_12605_cy8fy/1/y9b54b6287ecc222f2370c69500cadcaecebe4a10/1",
+  "columns": [
+    {
+      "name": "custkey",
+      "type": "varchar",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 2147483647
+          }
+        ]
+      }
+    },
+    {
+      "name": "first_name",
+      "type": "varchar",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 2147483647
+          }
+        ]
+      }
+    },
+    {
+      "name": "last_name",
+      "type": "varchar",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 2147483647
+          }
+        ]
+      }
+    },
+    {
+      "name": "street",
+      "type": "varchar",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 2147483647
+          }
+        ]
+      }
+    },
+    {
+      "name": "city",
+      "type": "varchar",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 2147483647
+          }
+        ]
+      }
+    },
+    {
+      "name": "state",
+      "type": "varchar",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 2147483647
+          }
+        ]
+      }
+    },
+    {
+      "name": "postcode",
+      "type": "varchar",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 2147483647
+          }
+        ]
+      }
+    },
+    {
+      "name": "country",
+      "type": "varchar(2)",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "phone",
+      "type": "varchar",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 2147483647
+          }
+        ]
+      }
+    },
+    {
+      "name": "dob",
+      "type": "varchar",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 2147483647
+          }
+        ]
+      }
+    },
+    {
+      "name": "gender",
+      "type": "varchar(1)",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "married",
+      "type": "varchar(1)",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "ssn",
+      "type": "varchar(11)",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 11
+          }
+        ]
+      }
+    },
+    {
+      "name": "paycheck_dd",
+      "type": "varchar(1)",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "estimated_income",
+      "type": "double",
+      "typeSignature": {
+        "rawType": "double",
+        "arguments": []
+      }
+    },
+    {
+      "name": "fico",
+      "type": "integer",
+      "typeSignature": {
+        "rawType": "integer",
+        "arguments": []
+      }
+    },
+    {
+      "name": "registration_date",
+      "type": "varchar",
+      "typeSignature": {
+        "rawType": "varchar",
+        "arguments": [
+          {
+            "kind": "LONG",
+            "value": 2147483647
+          }
+        ]
+      }
+    }
+  ],
+  "data": [
+    [ "1000001", "Jessica", "Wilkins", "6482 Lopez Run", "Huynhburgh", "NC", "39644", "US", "+1-241-619-2638x950", "1952-03-23", "M", "N", "123-64-3546", "N", 51299.55, 490, "1966-09-08" ],
+    [ "1000002", "Ryan", "Moon", "85265 Bruce Lock", "East Tonyafort", "DC", "17523", "US", "(224)281-8020", "1988-02-14", "M", "N", "190-78-1571", "N", 168586.71, 570, "2000-05-11" ],
+    [ "1000003", "Richard", "Tyler", "62298 Choi Mission", "East Natalie", "VT", "60907", "US", "605.889.1125", "1925-06-01", "M", "N", "282-96-7276", "Y", 253388.29, 677, "1986-04-17" ],
+    [ "1000006", "Mitchell", "Barker", "8088 Richardson Keys Suite 671", "East Shannon", "OK", "87423", "US", "+1-753-406-5384x3134", "1996-10-13", "M", "N", "006-03-2480", "N", 100559.42, 436, "1976-04-20" ],
+    [ "1000010", "Todd", "Garcia", "983 Gregory Avenue", "North Gregville", "NC", "62701", "US", "116.275.7286", "1954-06-07", "M", "N", "421-19-7088", "N", 316279.09, 665, "1962-04-06" ],
+    [ "1000012", "Kathryn", "Nichols", "485 Morgan Course", "West Krista", "SC", "44866", "US", "703-025-9030x468", "1945-02-19", "M", "N", "206-89-5430", "Y", 205898.82, 625, "1978-01-22" ],
+    [ "1000013", "Lisa", "Bauer", "72072 Zachary Village Suite 501", "Smithberg", "LA", "61699", "US", "001-425-389-7044x75058", "1996-12-18", "M", "N", "027-96-5993", "N", 152845.84, 548, "1934-08-16" ],
+    [ "1000015", "Jennifer", "Taylor", "9156 Hobbs Court Suite 611", "Richardport", "ME", "24725", "US", "105.571.4034x50450", "1980-12-19", "M", "N", "433-93-8415", "Y", 395107.91, 795, "1933-03-26" ],
+    [ "1000016", "Darius", "Jones", "6195 Shari Mountains Suite 985", "Zamoramouth", "OR", "74577", "US", "+1-138-460-6864x1011", "1932-01-28", "M", "N", "239-97-2475", "N", 29827.18, 301, "1965-04-08" ],
+    [ "1000018", "Michael", "Fletcher", "49384 Lindsay Mountains Suite 215", "Tylerchester", "MI", "68385", "US", "472-216-8656x60049", "1958-10-12", "M", "N", "258-02-3030", "N", 275949.69, 722, "1991-02-19" ]
+  ],
+  "stats": {
+    "state": "RUNNING",
+    "queued": false,
+    "scheduled": true,
+    "progressPercentage": 100.0,
+    "runningPercentage": 0.0,
+    "nodes": 1,
+    "totalSplits": 4,
+    "queuedSplits": 0,
+    "runningSplits": 0,
+    "completedSplits": 4,
+    "cpuTimeMillis": 26,
+    "wallTimeMillis": 52,
+    "queuedTimeMillis": 1,
+    "elapsedTimeMillis": 7822,
+    "processedRows": 1000,
+    "processedBytes": 60422,
+    "physicalInputBytes": 60422,
+    "physicalWrittenBytes": 0,
+    "peakMemoryBytes": 5012,
+    "spilledBytes": 0,
+    "rootStage": {
+      "stageId": "0",
+      "state": "RUNNING",
+      "done": false,
+      "nodes": 1,
+      "totalSplits": 3,
+      "queuedSplits": 0,
+      "runningSplits": 0,
+      "completedSplits": 3,
+      "cpuTimeMillis": 1,
+      "wallTimeMillis": 1,
+      "processedRows": 0,
+      "processedBytes": 0,
+      "physicalInputBytes": 0,
+      "failedTasks": 0,
+      "coordinatorOnly": false,
+      "subStages": [
+        {
+          "stageId": "1",
+          "state": "PENDING",
+          "done": false,
+          "nodes": 1,
+          "totalSplits": 1,
+          "queuedSplits": 0,
+          "runningSplits": 0,
+          "completedSplits": 1,
+          "cpuTimeMillis": 25,
+          "wallTimeMillis": 51,
+          "processedRows": 1000,
+          "processedBytes": 60422,
+          "physicalInputBytes": 60422,
+          "failedTasks": 0,
+          "coordinatorOnly": false,
+          "subStages": []
+        }
+      ]
+    }
+  },
+  "warnings": []
+}

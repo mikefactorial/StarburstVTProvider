@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="StarburstUrl" value="https://example.trino.galaxy.starburst.io/v1/statement"/>
+    <add key="StarburstUser" value="example@foo.com"/>
+    <add key="StarburstPass" value=""/>
+    <add key="DataverseUrl" value="https://foo.crm.dynamics.com"/>
+    <add key="ClientId" value="00000000-0000-0000-0000-000000000000"/>
+    <add key="ClientSecret" value=""/>
+    <add key="TenantId" value="00000000-0000-0000-0000-000000000000"/>
+    <add key="KeyVaultSecretUrl" value="https://foo.vault.azure.net/secrets/Example/123412341234123412341243"/>
+    <add key="Authority" value="https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000"/>
+    <add key="Resource" value="https://vault.azure.net"/>
+  </appSettings>
+</configuration>
