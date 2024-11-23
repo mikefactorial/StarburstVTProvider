@@ -36,7 +36,8 @@ namespace Starburst.Plugins
             }
             if (!response.IsSuccessStatusCode)
             {
-                throw new Exception($"Error: {response.StatusCode} - {response.ReasonPhrase}");
+                var content = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                throw new Exception($"Error: {response.StatusCode} - {response.ReasonPhrase} - {content}");
             }
             //return the response
             if (response != null)

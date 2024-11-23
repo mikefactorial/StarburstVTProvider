@@ -130,7 +130,7 @@ namespace Starburst.Plugins
                         var sourceEntity = retrieverService.RetrieveEntityDataSource();
                         var statementUrl = sourceEntity[StatementUrlKey].ToString();
                         var user = sourceEntity[UserNameKey].ToString();
-                        var pwd = sourceEntity[PasswordKey].ToString();
+                        var pwd = GetPassword(context, sourceEntity[PasswordKey].ToString());
 
                         DataProvider provider = new DataProvider(statementUrl, user, pwd);
                         collection = provider.ExecuteQuery(context, mapper, queryText);
@@ -151,6 +151,7 @@ namespace Starburst.Plugins
                 context.Trace("Get Password from Key Vault: " + configPasswordString);
                 var response = context.HttpClient.GetResponse(configPasswordString, "Bearer", token, null);
                 var mySecret = JsonConvert.DeserializeObject<KeyVaultSecret>(response);
+                context.Trace("Secret: " + mySecret.value);
                 return mySecret.value;
             }
             return configPasswordString;
