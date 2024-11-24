@@ -172,7 +172,7 @@ namespace Starburst.Plugins
                 else
                 {
                     //Lookup the value by name if it's not a number
-                    var option = ((EnumAttributeMetadata)entityAttribute).OptionSet.Options.FirstOrDefault(o => o.Label.UserLocalizedLabel.Label == value.ToString());
+                    var option = ((EnumAttributeMetadata)entityAttribute).OptionSet.Options.FirstOrDefault(o => o.Label.UserLocalizedLabel.Label.ToLower() == value.ToString().ToLower());
                     if (option != null && option.Value != null)
                     {
                         return new OptionSetValue(option.Value.Value);
