@@ -88,7 +88,7 @@ a.      If the column in an integer column, then the Data Provider will con
 
 b.      If the column is other than an integer value and not a guid the Data Provider will attempt to convert the value to a string and then convert the characters of the string to their hexadecimal value and combine them before prefixing the converted string with 0’s. This translation is limited based on the length of the string value which when converted may exceed the maximum length of a Guid. In this case a new guid is assigned to the record so it can be displayed in a list view. However, loading the row into a form will fail because the record’s key cannot be converted back to its original value from the data source.
 
-2.      Virtual Tables don’t allow for Currency Columns. For limitations of Virtual Tables see (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-virtual-entities#considerations-when-you-use-virtual-tables)
+2.      Virtual Tables don’t allow for Currency Columns among other types. For limitations of Virtual Tables see (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-virtual-entities#considerations-when-you-use-virtual-tables)
 
 3.      Tables in Dataverse must have a ‘Name’ column, the Name column or sometimes referred to as the Primary Attribute is a human readable text column that is generally used to uniquely identify a record when displaying it as a Lookup on another table’s form. For example, the Name column for the Contact table is the Full Name of the Contact. This is true for Virtual tables as well and you will need to map the name column to some column on your source table.
 
