@@ -1,10 +1,10 @@
 # StarburstVTProvider
 
-## Starburst Data Provider
+## Starburst Virtual Table Data Provider
 
 The Starburst virtual table data provider is a generic read-only provider for Starburst databases. Users can create read-only Virtual Tables in Dataverse based on Views and Tables in Starburst using the data provider and a data source. The provider is a C# Plugin that is registered in a Dataverse environment and can be transported between environments as part of a solution. The provider uses the Starburst provided statement endpoint to request data from Starburst and translates Fetch XML queries in Dataverse to a corresponding SQL statement.
 
-## Starburst Data Source
+## Starburst Virtual Table Data Source
 
 The Data Source contains information about the Data Source for this Data Provider, including the endpoint url, username and password. You can have many Data Sources for a particular Data Provider. For example, you may have different endpoints or credentials for a given Data Source. When handling authorization using different usernames and passwords you can configure multiple Data Sources and specify the username / password for each. Then when you create a Virtual Table, you’ll select the appropriate Data Source that would have access to the source tables you are mapping to the Virtual Table. Data Sources are stored as Dataverse records and are solution aware so they can be included in a solution when exporting / deploying a solution.
 
