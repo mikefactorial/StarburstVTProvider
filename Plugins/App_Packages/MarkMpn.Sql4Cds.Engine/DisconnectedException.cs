@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace MarkMpn.Sql4Cds.Engine
 {
@@ -6,6 +7,7 @@ namespace MarkMpn.Sql4Cds.Engine
     /// An exception that is thrown when the conversion process requires a connnection to the CDS instance but it is disconnected
     /// </summary>
     [Serializable]
+    [ExcludeFromCodeCoverage]
     public class DisconnectedException : ApplicationException
     {
         /// <summary>

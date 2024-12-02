@@ -3,6 +3,7 @@ using Microsoft.Xrm.Sdk.Messages;
 using Microsoft.Xrm.Sdk.Metadata;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 
 namespace MarkMpn.Sql4Cds.Engine
@@ -10,6 +11,7 @@ namespace MarkMpn.Sql4Cds.Engine
     /// <summary>
     /// A default implementation of <see cref="IAttributeMetadataCache"/>
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AttributeMetadataCache : IAttributeMetadataCache
     {
         private readonly IOrganizationService _org;

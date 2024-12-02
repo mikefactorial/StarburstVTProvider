@@ -6,6 +6,7 @@ using Microsoft.Xrm.Sdk.Metadata;
 using Microsoft.Xrm.Sdk.Query;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,7 @@ namespace MarkMpn.Sql4Cds.Engine
     /// <summary>
     /// Converts FetchXML to SQL
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public static class FetchXml2Sql
     {
         /// <summary>
