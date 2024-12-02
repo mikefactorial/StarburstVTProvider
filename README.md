@@ -26,7 +26,7 @@ To update the Data Provider, use the following steps.
 
 a.      If you don’t already have a valid signed certificate you can generate a self-signed certificate using the following steps (NOTE: For production scenarios it is necessary to use a valid root certificate. Self-signed certificates should only be used in development and testing scenarios.)
 
-                                                              i.      Update./Scripts/GenerateCertAndSign.ps1
+i.      Update./Scripts/GenerateCertAndSign.ps1
 
 1.      certificatePath variable – Update this based on the root of your project
 
@@ -40,13 +40,13 @@ a.      If you don’t already have a valid signed certificate you can gene
 
 6.      signToolPath variable – this path may differ in your environment. Set this to the location of the signtool.exe in your environment. NOTE: You may need to install the Windows Development Kit on your machine if the tool doesn’t exist.
 
-                                                             ii.      Save the script.
+ii.      Save the script.
 
-                                                           iii.      Run the script from a Powershell terminal.
+iii.      Run the script from a Powershell terminal.
 
 b.      If you already have a signed valid certificate, you can use SignPlugin.ps1 to sign the assembly with your existing certificate.
 
-                                                              i.      Update./Scripts/GenerateCertAndSign.ps1
+i.      Update./Scripts/GenerateCertAndSign.ps1
 
 1.      certificatePath variable – Update this based on the root of your project
 
@@ -54,15 +54,15 @@ b.      If you already have a signed valid certificate, you can use SignPlu
 
 3.      dllPath variable – set this to the path to the dll that was built in step 3.
 
-                                                             ii.      Save the script.
+ii.      Save the script.
 
-                                                           iii.      Run the script from a Powershell terminal.
+iii.      Run the script from a Powershell terminal.
 
 c.      Create a Power Platform CLI auth profile. (To install pac cli go to https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli)
 
-                                                              i.      Run pac auth create --environment \[your\_environment\_id\]
+i.      Run pac auth create --environment \[your\_environment\_id\]
 
-                                                             ii.      Follow the prompts to create an auth profile
+ii.      Follow the prompts to create an auth profile
 
 d.      Run pac plugin push --pluginFile .\\bin\\Debug\\net462\\Starburst.Plugins.dll --pluginId e2532ba3-70ae-4d42-8bd0-a8097c3d2c26. NOTE: The pluginId above assumes the plugin has already been registered via solution import in the environment.
 
