@@ -151,7 +151,6 @@ namespace Starburst.Plugins
                 context.Trace("Get Password from Key Vault: " + configPasswordString);
                 var response = context.HttpClient.GetResponse(configPasswordString, "Bearer", token, null);
                 var mySecret = JsonConvert.DeserializeObject<KeyVaultSecret>(response);
-                context.Trace("Secret: " + mySecret.value);
                 return mySecret.value;
             }
             return configPasswordString;
