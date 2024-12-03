@@ -6,7 +6,7 @@ namespace ConsoleApp1
     internal class PrestoQuery
     {
         static string PrestoResponse;
-        private static byte[] plainTextBytes = System.Text.Encoding.UTF8.GetBytes($"michael.ochs@asurion.com:M!&N7Lm5XI!fXnk4");
+        private static byte[] plainTextBytes = System.Text.Encoding.UTF8.GetBytes($"user@user.com:pass");
         private static string val = System.Convert.ToBase64String(plainTextBytes);
         static StringBuilder sb = new StringBuilder();
         // This dictionary holds the ordinal position of columns for each row
