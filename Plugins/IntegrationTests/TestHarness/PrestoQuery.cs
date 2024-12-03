@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Configuration;
 using System.Text;
 
 namespace ConsoleApp1
@@ -6,8 +7,6 @@ namespace ConsoleApp1
     internal class PrestoQuery
     {
         static string PrestoResponse;
-        private static byte[] plainTextBytes = System.Text.Encoding.UTF8.GetBytes($"user@user.com:pass");
-        private static string val = System.Convert.ToBase64String(plainTextBytes);
         static StringBuilder sb = new StringBuilder();
         // This dictionary holds the ordinal position of columns for each row
         static Dictionary<int, string> ColumnNameLookup = new Dictionary<int, string>();
@@ -182,8 +181,11 @@ namespace ConsoleApp1
                 Timeout = new TimeSpan(1, 0, 0)
             };
 
+            byte[] plainTextBytes = System.Text.Encoding.UTF8.GetBytes($"{ConfigurationManager.AppSettings.Get("StarburstUser")}:{ConfigurationManager.AppSettings.Get("StarburstPass")}");
+
+            // set up the call
             httpClient.DefaultRequestHeaders.Add("ContentType", "application/json");
-            httpClient.DefaultRequestHeaders.Add("Authorization", "Basic " + val);
+            httpClient.DefaultRequestHeaders.Add("Authorization", "Basic " + System.Convert.ToBase64String(plainTextBytes));
 
             //make the call
             HttpContent Body = new StringContent(QueryText);
@@ -209,9 +211,12 @@ namespace ConsoleApp1
                 Timeout = new TimeSpan(1, 0, 0)
             };
 
+
+            byte[] plainTextBytes = System.Text.Encoding.UTF8.GetBytes($"{ConfigurationManager.AppSettings.Get("StarburstUser")}:{ConfigurationManager.AppSettings.Get("StarburstPass")}");
+
             // set up the call
             httpClient.DefaultRequestHeaders.Add("ContentType", "application/json");
-            httpClient.DefaultRequestHeaders.Add("Authorization", "Basic " + val);
+            httpClient.DefaultRequestHeaders.Add("Authorization", "Basic " + System.Convert.ToBase64String(plainTextBytes));
 
 
 
